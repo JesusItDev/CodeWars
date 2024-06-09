@@ -14,10 +14,7 @@ The second value in the first pair in the array is 0, since the bus is empty in 
 let number = [[10,0],[3,5],[5,8]];
 let acum=0;
 
-for (var i=0; i<number.length; i++) {
-    // Bucle que recorre el array que está en la posición i
-    acum = (number[i][0]-number[i][1]) +acum;
-}
+
 console.log(acum);
 /*
 let number = [[10,0],[3,5],[5,8]];
