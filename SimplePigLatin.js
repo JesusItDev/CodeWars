@@ -6,8 +6,15 @@ pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
 pigIt('Hello world !');     // elloHay orldway !
 */
 
-let str = 'Pig latin is cool';
+let str = 'Hello world !';
 const words = str.split(" ")
-words.forEach(element => {
-    if(element /[A-Za-z]/g) console.log(element.);
-});
+
+for (let index = 0; index < words.length; index++) {
+    if(words[index].match(/[A-Za-z]/g)) {
+        words[index] = words[index].slice(1,words[index].length) + words[index].charAt(0) + "ay";
+    }
+    
+}
+    
+
+    console.log(words.join(" "));
